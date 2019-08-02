@@ -7,8 +7,9 @@ xhr.onreadystatechange = function() {
         sortJsonData(dataArr);
     }
 }
-  
-xhr.open('GET', 'http://127.0.0.1/json/testjson.json', true);
+var url = 'http://127.0.0.1/json/testjson.json';
+
+xhr.open('GET', url, true);
   
 xhr.send(null);
   
